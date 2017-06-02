@@ -11,7 +11,13 @@
 
 
     <!--填入component包名，Spring自动扫描注入-->
-    <context:component-scan base-package="com.example" annotation-config="true"/>
+    <context:component-scan base-package="org.seckill" annotation-config="true"/>
+
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <property name="basePackage" value="org.seckill.dao"></property>
+    </bean>
 
     <!--<context:annotation-config/>-->
     <aop:aspectj-autoproxy/>
