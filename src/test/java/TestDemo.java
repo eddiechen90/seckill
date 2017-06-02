@@ -1,5 +1,3 @@
-package com.mall.test;
-
 import org.junit.Test;
 import util.ZxingUtils;
 
