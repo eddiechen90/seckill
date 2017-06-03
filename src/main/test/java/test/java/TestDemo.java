@@ -19,4 +19,10 @@ public class TestDemo {
         file.createNewFile();
 
     }
+
+    @Test
+    public void test02(){
+        Boolean b=new Boolean("true");
+        System.out.println(b);
+    }
 }
